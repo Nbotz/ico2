@@ -1,0 +1,17 @@
+name: bucci
+version: 0.1.0
+
+authors:
+  -  <>
+
+targets:
+  bucci:
+    main: src/bucci.cr
+
+dependencies:
+  raze:
+    github: samueleaton/raze
+
+crystal: 0.24.1
+
+license: MIT
