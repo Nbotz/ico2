@@ -2,31 +2,51 @@
 <title> ICOBUCCI CL/OS</title>
 <style>
 	@import url('https://fonts.googleapis.com/css?family=Arapey:400i');
-	@import url('https://fonts.googleapis.com/css?family=Barlow:500');
+	@import url('https://fonts.googleapis.com/css?family=Raleway:700,700i');
 	body { 
+		filter: saturate(75%);
 		margin: 2rem;
-		background-color: #55678B; 
+		background-color: #fdf9f3;
 		font-family: 'Arapey', serif; 
 		font-size: 30px;
 	}
 	h1 { 
-		background-color: #f0eaf4;
+		background: radial-gradient(circle at bottom right, #f66009 15%, red ,rgba(0,0,0,0) 95%);
 		border-radius: 9px 9px 0px 0px;
 		font-family: 'Arapey', serif;
-		font-size: 44px;
-		color: #55678B;
-		border-style: outset;
-		padding: 0;
+		font-size: 58px;
+		color: #fdf9f3;
+		padding: 12px;
 		margin: 0;
+		display: inline-block;
+		box-shadow: 10px 10px 0px #000;
 	}
 	h2 {
-		background-color: #f0eaf4;
-		font-family: 'Arapey', serif;
+		background: radial-gradient(circle at top left, #fdf9f3 20%, #f66009 ,rgba(0,0,0,0));
+		font-family: 'Raleway', serif;
+		font-style: italic;
 		font-size: 20px;
-		color: #55678B;
-		border-style: outset;
+		color: #000;
 		padding: 10px;
-		display:inline-block;
+		margin: 10px;
+		display: inline-block;
+		box-shadow: 10px 10px 0px #000;
+	}
+	
+	h3 {
+		background-color: #419bbe;
+		font-family: 'Raleway', serif;
+		font-style: italic;
+		font-size: 20px;
+		color: #000;
+		padding: 10px;
+		margin: 10px;
+		display: inline-block;
+		box-shadow: 10px 10px 0px #000;
+	}
+	hr {
+		width: 100%;
+		
 	}
 	div.logoimg {
 		background-image: url(https://image.ibb.co/i8xnfS/logobboxs.png);
@@ -34,58 +54,107 @@
 		height: 200px;
 	}
 	a, a:link, a:visited {
-		color: #55678b;
-		font-size: 27px;
+		color: #fdf9f3;
+		font-size: 16px;
 		font-weight: normal;
 		text-decoration: none;
-		background-color: #f0eaf4;
+		background: radial-gradient(circle at bottom left 20%, #722dd2 10%, #d22d8d 45%, rgba(0,0,0,0.1), rgba(0,0,0,0));
 		float:left;
-		padding: 8.2px;
-		border-style: outset;
-		opacity: 1;
-   		transition: opacity .25s ease-in-out;
-   		-moz-transition: opacity .25s ease-in-out;
-   		-webkit-transition: opacity .25s ease-in-out;
+		padding: 27px;
+		margin: 7px;
+		display: block;
+		box-shadow: 10px 10px 0px #000;
 	}
-	a:hover {
-		opacity: 0.5;
+	a.current {
+		background: radial-gradient(circle at bottom left 20%, #8dd22d 10%, #2dd272 45%, rgba(0,0,0,0.1), rgba(0,0,0,0));
+	}
+	a.current:hover{
 		color: #fdf9f3;
 		text-decoration: none;
-		background-color: #55448B;
-		border-style: inset;
+		background-color: #8dd22d;
 	}
-	div.main_menu {
+	a:hover {
+		color: #fdf9f3;
+		text-decoration: none;
+		background-color: #722dd2;
+	}
+	div#headline {
+		padding: 10px;
+	}
+	div#smalltalk{
+		font-size: 13px;
+		font-family: 'Raleway', sans-serif
+	}
+	div#firstline {
 		margin: 0;
-		padding: 0;
-		font-family: 'Barlow';
+		padding: 10px;
 	}
-	div.picture {
+	div#site_name{
+		float: left;
+	}
+	div#footer {
+		font-size: 16px;
+	}
+	.main_menu {
+		margin: 10px;
+		padding: 0;
+		float: right;
+		font-family: 'Raleway', sans-serif;
+	}
+	.picture {
 		border-style: outset;
+	}
+	
+	p.content {
+		position: relative;
+	}
+	.new_arrival_wrap {
+		font-size: 40px;
+	}
+	.n_a_title, .n_a_pic {
+		margin: 10px;
+		position: relative;
+	}
+	img {
+		border-radius: 10px;
 	}
 	
 </style>
 <body>
 
-<div id="menu_wrapper">
-	<!-- <div class="logoimg"></div> -->
+<div id="headline">
 	<h1>
-		<div class="site_name"><center>icobucci.</center></div>
+		<div id="site_name">icobucci.</div>
+		<div id="smalltalk">CLOTHING FOR TOMORROW, SOMEDAY!</div>
 	</h1>
-		<div class="main_menu">
-			<a href="" class="current">Home</a>
-			<a href="404">New Arrivals</a>
-			<a href="404">All Clothes</a>
-			<a href="404">About</a>
-			<a href="404">Newspeak!</a>
-			<a href="404">Gallery</a>
-			<a href="404">Contact</a>
-		</div> <!-- end of main_menu -->
-</div> <!-- end of menu_wrapper -->
+	<p div class="main_menu">
+		<a href="" class="current"><i>[Home]</i></a>
+		<a href=""><i>[New Arrivals]</i></a>
+		<a href=""><i>[All Clothes]</i></a>
+		<a href=""><i>[Gallery]</i></a>
+		<a href=""><i>[Contact]</i></a>
+	</p> <!-- end of main_menu -->
+</div> <!-- end of headline -->
 
-<div id="content">
-	<h2>
-		<p>This site is under construction. This will be the home of "Icobucci Cl/OS" clothing &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta adi Piscing libero, eget elem ntum lectus varius sed.</p>
-	</h2>
+<hr></hr>
+<hr></hr>
+
+<div id="firstline">
+
 </div>
+
+<div id="paraline">
+<h3>
+<p>We're gatthering our assets. This home of "Icobucci Cl/OS" clothing will go public soon!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</h3>
+</div>
+
+<hr></hr>
+
+<div id="footer">
+	© 2018 ICOBUC.CI ALL RIGHTS RESERVED
+</div>
+
 </body>
 </html>
